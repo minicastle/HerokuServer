@@ -6,17 +6,12 @@
   "homepage": "/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js",
-    "build": "babel . -d build"
+    "start": "node main.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.1",
     "express": "^4.17.3"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.8"
   }
 }
