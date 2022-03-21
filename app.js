@@ -1,11 +1,11 @@
 const { default: axios } = require("axios");
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT||3001;
+const PORT = process.env.PORT||5000;
 const data = require("./dataCrawl.json");
 
 app.get("/",function(req,res){
-    res.send("Server Set Start localhost:"+PORT);
+    res.send("Server Set Start with Heroku");
 });
 
 app.get("/exchange_rate/nowdate",function(req,res){

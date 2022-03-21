@@ -5,7 +5,7 @@
   "main": "main.js",
   "homepage": "/",
   "scripts": {
-    "start": "node main.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
