@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT;
-const urlCrawl = require("./dataCrawl.json");
+// const urlCrawl = require("./dataCrawl.json");
 
 app.get("/",function(req,res){
     res.send("Server Set start with Heroku");
