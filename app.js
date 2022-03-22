@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT;
-const axios = require("axios");
+const request = require("request");
 const urlCrawl = require("./dataCrawl.json");
 
 app.get("/",function(req,res){
@@ -57,7 +57,7 @@ app.get("/exchange_rate/nowdate",function(req,res){
         return (year+month()+date());
     }
     console.log(nowDate());
-    fetch(urlCrawl.url1+urlCrawl.authkey+urlCrawl.url2+nowDate()+urlCrawl.url3).then(function(data){
+    request.get(urlCrawl.url1+urlCrawl.authkey+urlCrawl.url2+nowDate()+urlCrawl.url3,function(data){
         console.log(data);
         for(let i = 0;i<data.data.length;i++){
             delete data.data[i].result;
@@ -67,6 +67,16 @@ app.get("/exchange_rate/nowdate",function(req,res){
         console.log(data.data);
         res.send(data.data);
     });
+    // fetch(urlCrawl.url1+urlCrawl.authkey+urlCrawl.url2+nowDate()+urlCrawl.url3).then(function(data){
+    //     console.log(data);
+    //     for(let i = 0;i<data.data.length;i++){
+    //         delete data.data[i].result;
+    //         delete data.data[i].yy_efee_r;
+    //         delete data.data[i].ten_dd_efee_r;
+    //     }
+    //     console.log(data.data);
+    //     res.send(data.data);
+    // });
 });
 
 app.listen(port);
