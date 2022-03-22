@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT;
+const axios = requie("axios");
 // const urlCrawl = require("./dataCrawl.json");
 
 app.get("/",function(req,res){
