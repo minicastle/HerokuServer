@@ -1,7 +1,6 @@
 const express = require("express");
-const app = express();
+// const app = express();
 const port = process.env.PORT;
-const request = require("request");
 const urlCrawl = require("./dataCrawl.json");
 
 app.get("/",function(req,res){
