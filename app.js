@@ -7,6 +7,7 @@ const urlCrawl = require("./dataCrawl.json");
 app.get("/",function(req,res){
     res.send("Server Set start with Heroku");
 });
+
 app.get("/nowdate",function(req,res){
     let now = new Date;
     let year = String(now.getFullYear());
@@ -30,6 +31,7 @@ app.get("/nowdate",function(req,res){
     }
     res.send(year+month()+date());
 });
+
 app.get("/exchange_rate/nowdate",function(req,res){
     let nowDate = function(){
         let now = new Date;
@@ -55,7 +57,8 @@ app.get("/exchange_rate/nowdate",function(req,res){
         return (year+month()+date());
     }
     console.log(nowDate());
-    axios.request(urlCrawl.url1+urlCrawl.authkey+urlCrawl.url2+nowDate()+urlCrawl.url3).then(function(data){
+    axios.request("https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=56AbA0bOuRBSPSCjGVJx1865Ii35Ehhu&searchdate="+nowDate()+"&data=AP01").then(function(data){
+    // axios.request(urlCrawl.url1+urlCrawl.authkey+urlCrawl.url2+nowDate()+urlCrawl.url3).then(function(data){
         console.log(data);
         for(let i = 0;i<data.data.length;i++){
             delete data.data[i].result;
@@ -66,4 +69,5 @@ app.get("/exchange_rate/nowdate",function(req,res){
         res.send(data.data);
     });
 });
+
 app.listen(port);
