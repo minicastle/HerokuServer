@@ -57,8 +57,7 @@ app.get("/exchange_rate/nowdate",function(req,res){
         return (year+month()+date());
     }
     console.log(nowDate());
-    axios.request("https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=56AbA0bOuRBSPSCjGVJx1865Ii35Ehhu&searchdate="+nowDate()+"&data=AP01").then(function(data){
-    // axios.request(urlCrawl.url1+urlCrawl.authkey+urlCrawl.url2+nowDate()+urlCrawl.url3).then(function(data){
+    fetch(urlCrawl.url1+urlCrawl.authkey+urlCrawl.url2+nowDate()+urlCrawl.url3).then(function(data){
         console.log(data);
         for(let i = 0;i<data.data.length;i++){
             delete data.data[i].result;
