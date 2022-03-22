@@ -2,7 +2,7 @@
   "name": "herokuserver",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "app.js",
   "homepage": "/",
   "scripts": {
     "start": "node app.js"

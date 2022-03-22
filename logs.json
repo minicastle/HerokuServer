@@ -1,0 +1,103 @@
+heroku logs --tail --app herokuservertominicastle
+»   Warning: heroku update available from 7.53.0 to 7.59.4.
+2022-03-22T02:10:17.392926+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-03-22T02:10:17.392926+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-03-22T02:10:17.392926+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12) {
+2022-03-22T02:10:17.392927+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-03-22T02:10:17.392927+00:00 app[web.1]: requireStack: [ '/app/app.js' ]
+2022-03-22T02:10:17.392928+00:00 app[web.1]: }
+2022-03-22T02:10:17.529409+00:00 heroku[web.1]: Process exited with status 1
+2022-03-22T02:10:17.599540+00:00 heroku[web.1]: State changed from starting to crashed
+2022-03-22T02:20:56.986958+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=herokuservertominicastle.herokuapp.com request_id=e8b2c130-4238-43bc-aa68-51047947b190 fwd="211.253.60.65" dyno= connect= service= status=503 bytes= protocol=https
+2022-03-22T02:20:57.646982+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=herokuservertominicastle.herokuapp.com request_id=2ac8cfd5-1272-43fa-a533-50c38911ceb2 fwd="211.253.60.65" dyno= connect= service= status=503 bytes= protocol=https
+2022-03-22T02:22:53.481810+00:00 app[api]: Set web config vars by user jk598200167@gmail.com
+2022-03-22T02:22:53.481810+00:00 app[api]: Release v20 created by user jk598200167@gmail.com
+2022-03-22T02:22:54.446105+00:00 heroku[web.1]: State changed from crashed to starting
+2022-03-22T02:22:56.657602+00:00 heroku[web.1]: Starting process with command `npm start`
+2022-03-22T02:22:57.692511+00:00 app[web.1]:
+2022-03-22T02:22:57.692530+00:00 app[web.1]: > herokuserver@1.0.0 start
+2022-03-22T02:22:57.692530+00:00 app[web.1]: > node app.js
+2022-03-22T02:22:57.692530+00:00 app[web.1]:
+2022-03-22T02:22:57.810808+00:00 app[web.1]: node:internal/modules/cjs/loader:936
+2022-03-22T02:22:57.810809+00:00 app[web.1]: throw err;
+2022-03-22T02:22:57.810810+00:00 app[web.1]: ^
+2022-03-22T02:22:57.810810+00:00 app[web.1]:
+2022-03-22T02:22:57.810810+00:00 app[web.1]: Error: Cannot find module './dataCrawl.json'
+2022-03-22T02:22:57.810810+00:00 app[web.1]: Require stack:
+2022-03-22T02:22:57.810811+00:00 app[web.1]: - /app/app.js
+2022-03-22T02:22:57.810815+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+2022-03-22T02:22:57.810818+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-03-22T02:22:57.810818+00:00 app[web.1]: at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-22T02:22:57.810826+00:00 app[web.1]: at require (node:internal/modules/cjs/helpers:102:18)
+2022-03-22T02:22:57.810826+00:00 app[web.1]: at Object.<anonymous> (/app/app.js:5:14)
+2022-03-22T02:22:57.810826+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1103:14)
+2022-03-22T02:22:57.810827+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-03-22T02:22:57.810827+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-03-22T02:22:57.810827+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-03-22T02:22:57.810827+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12) {
+2022-03-22T02:22:57.810828+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-03-22T02:22:57.810828+00:00 app[web.1]: requireStack: [ '/app/app.js' ]
+2022-03-22T02:22:57.810828+00:00 app[web.1]: }
+2022-03-22T02:22:57.934164+00:00 heroku[web.1]: Process exited with status 1
+2022-03-22T02:22:57.988609+00:00 heroku[web.1]: State changed from starting to crashed
+2022-03-22T02:22:57.993041+00:00 heroku[web.1]: State changed from crashed to starting
+2022-03-22T02:22:59.580492+00:00 heroku[web.1]: Starting process with command `npm start`
+2022-03-22T02:23:00.755573+00:00 app[web.1]:
+2022-03-22T02:23:00.755585+00:00 app[web.1]: > herokuserver@1.0.0 start
+2022-03-22T02:23:00.755585+00:00 app[web.1]: > node app.js
+2022-03-22T02:23:00.755586+00:00 app[web.1]:
+2022-03-22T02:23:00.878920+00:00 app[web.1]: node:internal/modules/cjs/loader:936
+2022-03-22T02:23:00.878922+00:00 app[web.1]: throw err;
+2022-03-22T02:23:00.878922+00:00 app[web.1]: ^
+2022-03-22T02:23:00.878923+00:00 app[web.1]:
+2022-03-22T02:23:00.878923+00:00 app[web.1]: Error: Cannot find module './dataCrawl.json'
+2022-03-22T02:23:00.878923+00:00 app[web.1]: Require stack:
+2022-03-22T02:23:00.878924+00:00 app[web.1]: - /app/app.js
+2022-03-22T02:23:00.878924+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+2022-03-22T02:23:00.878925+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-03-22T02:23:00.878925+00:00 app[web.1]: at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-22T02:23:00.878925+00:00 app[web.1]: at require (node:internal/modules/cjs/helpers:102:18)
+2022-03-22T02:23:00.878926+00:00 app[web.1]: at Object.<anonymous> (/app/app.js:5:14)
+2022-03-22T02:23:00.878926+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1103:14)
+2022-03-22T02:23:00.878926+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-03-22T02:23:00.878930+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-03-22T02:23:00.878930+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-03-22T02:23:00.878931+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12) {
+2022-03-22T02:23:00.878931+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-03-22T02:23:00.878931+00:00 app[web.1]: requireStack: [ '/app/app.js' ]
+2022-03-22T02:23:00.878932+00:00 app[web.1]: }
+2022-03-22T02:23:01.002743+00:00 heroku[web.1]: Process exited with status 1
+2022-03-22T02:23:01.056480+00:00 heroku[web.1]: State changed from starting to crashed
+2022-03-22T02:23:18.577348+00:00 app[api]: Remove web config vars by user jk598200167@gmail.com
+2022-03-22T02:23:18.577348+00:00 app[api]: Release v21 created by user jk598200167@gmail.com
+2022-03-22T02:23:19.076882+00:00 heroku[web.1]: State changed from crashed to starting
+2022-03-22T02:23:20.800268+00:00 heroku[web.1]: Starting process with command `npm start`
+2022-03-22T02:23:22.094781+00:00 app[web.1]:
+2022-03-22T02:23:22.094797+00:00 app[web.1]: > herokuserver@1.0.0 start
+2022-03-22T02:23:22.094797+00:00 app[web.1]: > node app.js
+2022-03-22T02:23:22.094797+00:00 app[web.1]:
+2022-03-22T02:23:22.215231+00:00 app[web.1]: node:internal/modules/cjs/loader:936
+2022-03-22T02:23:22.215233+00:00 app[web.1]: throw err;
+2022-03-22T02:23:22.215234+00:00 app[web.1]: ^
+2022-03-22T02:23:22.215234+00:00 app[web.1]:
+2022-03-22T02:23:22.215234+00:00 app[web.1]: Error: Cannot find module './dataCrawl.json'
+2022-03-22T02:23:22.215235+00:00 app[web.1]: Require stack:
+2022-03-22T02:23:22.215235+00:00 app[web.1]: - /app/app.js
+2022-03-22T02:23:22.215235+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+2022-03-22T02:23:22.215236+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-03-22T02:23:22.215236+00:00 app[web.1]: at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-22T02:23:22.215236+00:00 app[web.1]: at require (node:internal/modules/cjs/helpers:102:18)
+2022-03-22T02:23:22.215237+00:00 app[web.1]: at Object.<anonymous> (/app/app.js:5:14)
+2022-03-22T02:23:22.215237+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1103:14)
+2022-03-22T02:23:22.215237+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-03-22T02:23:22.215237+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-03-22T02:23:22.215237+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-03-22T02:23:22.215238+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12) {
+2022-03-22T02:23:22.215241+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-03-22T02:23:22.215242+00:00 app[web.1]: requireStack: [ '/app/app.js' ]
+2022-03-22T02:23:22.215242+00:00 app[web.1]: }
+2022-03-22T02:23:22.356563+00:00 heroku[web.1]: Process exited with status 1
+2022-03-22T02:23:22.417938+00:00 heroku[web.1]: State changed from starting to crashed
+2022-03-22T02:28:31.366765+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=herokuservertominicastle.herokuapp.com request_id=39f81baa-537c-4de7-bf29-1f46ea07f925 fwd="203.142.217.231" dyno= connect= service= status=503 bytes= protocol=https
+2022-03-22T02:28:31.989918+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=herokuservertominicastle.herokuapp.com request_id=ada5d55f-674b-4e99-9482-15ebe76b102c fwd="203.142.217.231" dyno= 
+connect= service= status=503 bytes= protocol=https
