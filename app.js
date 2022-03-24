@@ -15,7 +15,6 @@ app.get("/nowdate",function(req,res){
 app.get("/exchange_rate",async function(req,res){
     let sendData = await apiCrawl;
     res.send(sendData);
-    console.log(sendData);
 });
 
 app.listen(port);

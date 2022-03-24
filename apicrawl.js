@@ -34,8 +34,6 @@ async function apiCrawl(){
         }
         return data.data;
     });
-    console.log(value);
-    console.log(typeof(value));
     return value;
 }
 
