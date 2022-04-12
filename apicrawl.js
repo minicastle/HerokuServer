@@ -31,6 +31,8 @@ async function apiCrawl(){
             delete data.data[i].result;
             delete data.data[i].yy_efee_r;
             delete data.data[i].ten_dd_efee_r;
+            data.data[i].ttb = Number(data.data[i].ttb);
+            data.data[i].ttb = Number(data.data[i].tts);
         }
         return data.data;
     });

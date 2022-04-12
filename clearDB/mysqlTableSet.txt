@@ -1,0 +1,13 @@
+화폐 분류 : cur_unit
+송금 보낼때 환율 : ttb
+송금 받을때 환율 : tts
+매매기준율 : deal_bas_r
+화폐 명 : cur_nm
+
+date : now
+time : now
+unit : cur_unit
+name : cur_unit
+ttb : ttb
+tts : tts
+deal base : deal_bas_r
