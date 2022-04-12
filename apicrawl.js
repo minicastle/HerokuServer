@@ -32,17 +32,17 @@ async function apiCrawl(){
             delete data.data[i].result;
             delete data.data[i].yy_efee_r;
             delete data.data[i].ten_dd_efee_r;
-            buf = data.data[i].ttb.split("").filter(x=>x===",");
+            buf = data.data[i].ttb.split("").filter(x=>x!==",");
             data.data[i].ttb = Number(buf.join(""));
-            buf = data.data[i].tts.split("").filter(x=>x===",");
+            buf = data.data[i].tts.split("").filter(x=>x!==",");
             data.data[i].tts = Number(buf.join(""));
-            buf = data.data[i].deal_bas_r.split("").filter(x=>x===",");
+            buf = data.data[i].deal_bas_r.split("").filter(x=>x!==",");
             data.data[i].deal_bas_r = Number(buf.join(""));
-            buf = data.data[i].bkpr.split("").filter(x=>x===",");
+            buf = data.data[i].bkpr.split("").filter(x=>x!==",");
             data.data[i].bkpr = Number(buf.join(""));
-            buf = data.data[i].kftc_bkpr.split("").filter(x=>x===",");
+            buf = data.data[i].kftc_bkpr.split("").filter(x=>x!==",");
             data.data[i].kftc_bkpr = Number(buf.join(""));
-            buf = data.data[i].kftc_deal_bas_r.split("").filter(x=>x===",");
+            buf = data.data[i].kftc_deal_bas_r.split("").filter(x=>x!==",");
             data.data[i].kftc_deal_bas_r = Number(buf.join(""));
         }
         return data.data;
