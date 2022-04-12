@@ -32,7 +32,11 @@ async function apiCrawl(){
             delete data.data[i].yy_efee_r;
             delete data.data[i].ten_dd_efee_r;
             data.data[i].ttb = Number(data.data[i].ttb);
-            data.data[i].ttb = Number(data.data[i].tts);
+            data.data[i].tts = Number(data.data[i].tts);
+            data.data[i].deal_bas_r = Number(data.data[i].deal_bas_r);
+            data.data[i].bkpr = Number(data.data[i].bkpr);
+            data.data[i].kftc_bkpr = Number(data.data[i].kftc_bkpr);
+            data.data[i].kftc_deal_bas_r = Number(data.data[i].kftc_deal_bas_r);
         }
         return data.data;
     });
