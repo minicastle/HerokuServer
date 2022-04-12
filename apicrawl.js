@@ -28,15 +28,22 @@ function nowDate(){
 async function apiCrawl(){
     let value = await axios.get(datacrawl.url1+datacrawl.authkey+datacrawl.url2+nowDate()+datacrawl.url3).then(function(data){
         for(let i = 0;i<data.data.length;i++){
+            let buf = [];
             delete data.data[i].result;
             delete data.data[i].yy_efee_r;
             delete data.data[i].ten_dd_efee_r;
-            data.data[i].ttb = Number(data.data[i].ttb);
-            data.data[i].tts = Number(data.data[i].tts);
-            data.data[i].deal_bas_r = Number(data.data[i].deal_bas_r);
-            data.data[i].bkpr = Number(data.data[i].bkpr);
-            data.data[i].kftc_bkpr = Number(data.data[i].kftc_bkpr);
-            data.data[i].kftc_deal_bas_r = Number(data.data[i].kftc_deal_bas_r);
+            buf = data.data[i].ttb.split("").filter(x=>x===",");
+            data.data[i].ttb = Number(buf.join(""));
+            buf = data.data[i].tts.split("").filter(x=>x===",");
+            data.data[i].tts = Number(buf.join(""));
+            buf = data.data[i].deal_bas_r.split("").filter(x=>x===",");
+            data.data[i].deal_bas_r = Number(buf.join(""));
+            buf = data.data[i].bkpr.split("").filter(x=>x===",");
+            data.data[i].bkpr = Number(buf.join(""));
+            buf = data.data[i].kftc_bkpr.split("").filter(x=>x===",");
+            data.data[i].kftc_bkpr = Number(buf.join(""));
+            buf = data.data[i].kftc_deal_bas_r.split("").filter(x=>x===",");
+            data.data[i].kftc_deal_bas_r = Number(buf.join(""));
         }
         return data.data;
     });
