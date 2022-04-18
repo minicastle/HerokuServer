@@ -20,6 +20,6 @@ app.get("/exchange_rate",async function(req,res){
 
 app.listen(port);
 
-// const job = nodeSchedule.scheduleJob("* * * * * *",function(){
+// const job = nodeSchedule.scheduleJob("* * * * * 1-5",function(){
 //     console.log("Job Complete..");
 // });

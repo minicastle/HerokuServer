@@ -1,6 +1,0 @@
-userID : be7562dfc588f3
-userPassword : adf98975
-HostName : us-cdbr-east-05.cleardb.net
-password2 : heroku_dec748a0b79b146
-
-mysql -u be7562dfc588f3 -h us-cdbr-east-05.cleardb.net -p heroku_dec748a0b79b146
