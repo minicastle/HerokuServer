@@ -53,7 +53,7 @@ app.get("/access_dbdata",function(req,res){
 
 app.listen(port);
 
-const job = nodeSchedule.scheduleJob("5 * * * * 1-5",async function(){
+const job = nodeSchedule.scheduleJob("* * 10 * * 1-5",async function(){
     const tableName = function(){
         let now = new Date;
         let year = String(now.getFullYear());
