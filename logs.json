@@ -101,3 +101,27 @@ heroku logs --tail --app herokuservertominicastle
 2022-03-22T02:28:31.366765+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=herokuservertominicastle.herokuapp.com request_id=39f81baa-537c-4de7-bf29-1f46ea07f925 fwd="203.142.217.231" dyno= connect= service= status=503 bytes= protocol=https
 2022-03-22T02:28:31.989918+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=herokuservertominicastle.herokuapp.com request_id=ada5d55f-674b-4e99-9482-15ebe76b102c fwd="203.142.217.231" dyno= 
 connect= service= status=503 bytes= protocol=https
+
+all process
+2022-05-19T00:33:37.828605+00:00 heroku[web.1]: Starting process with command `npm start`
+2022-05-19T00:33:38.898544+00:00 app[web.1]: 
+2022-05-19T00:33:38.898560+00:00 app[web.1]: > herokuserver@1.0.0 start
+2022-05-19T00:33:38.898561+00:00 app[web.1]: > node app.js
+2022-05-19T00:33:38.898561+00:00 app[web.1]: 
+2022-05-19T00:33:39.494289+00:00 heroku[web.1]: State changed from starting to up
+2022-05-19T00:33:41.010334+00:00 heroku[router]: at=info method=GET path="/exchange_rate" host=servertominicastle.herokuapp.com request_id=8b53bf64-0021-4cd1-979c-b2eb8fbe6ef1 fwd="211.253.60.65" dyno=web.1 connect=0ms service=4ms status=200 bytes=207 protocol=https
+2022-05-19T00:33:47.472479+00:00 heroku[router]: at=info method=GET path="/nowdate" host=servertominicastle.herokuapp.com request_id=6b695f2a-5ecb-4c2e-8895-f1c456c66d5d fwd="211.253.60.65" dyno=web.1 connect=0ms service=1ms status=200 bytes=206 protocol=https
+2022-05-19T00:33:53.907277+00:00 heroku[router]: at=info method=GET path="/nowdate" host=servertominicastle.herokuapp.com request_id=26c096a7-49f9-4aa8-ad0d-f0714c271549 fwd="211.253.60.65" dyno=web.1 connect=0ms service=2ms status=304 bytes=149 protocol=https
+2022-05-19T00:34:06.292009+00:00 heroku[router]: at=info method=GET path="/exchange_rate" host=servertominicastle.herokuapp.com request_id=40a1c0c3-e9cd-457a-9b6a-7c157079bd38 fwd="211.253.60.65" dyno=web.1 connect=0ms service=1ms status=304 bytes=149 protocol=https
+
+web
+2022-05-19T00:33:35.773235+00:00 heroku[web.1]: Restarting
+2022-05-19T00:33:35.776641+00:00 heroku[web.1]: State changed from up to starting
+2022-05-19T00:33:36.396039+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2022-05-19T00:33:36.680406+00:00 heroku[web.1]: Process exited with status 143
+2022-05-19T00:33:37.828605+00:00 heroku[web.1]: Starting process with command `npm start`
+2022-05-19T00:33:38.898544+00:00 app[web.1]: 
+2022-05-19T00:33:38.898560+00:00 app[web.1]: > herokuserver@1.0.0 start
+2022-05-19T00:33:38.898561+00:00 app[web.1]: > node app.js
+2022-05-19T00:33:38.898561+00:00 app[web.1]: 
+2022-05-19T00:33:39.494289+00:00 heroku[web.1]: State changed from starting to up

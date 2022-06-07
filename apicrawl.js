@@ -4,25 +4,16 @@ const datacrawl = require("./datacrawl.json");
 function nowDate(){
     let now = new Date;
     let year = String(now.getFullYear());
-    let month = function(){
-        let buf = String(now.getMonth()+1);
-        if(buf.length!==2){
-            return "0"+buf;
-        }
-        else{
-            return buf;
-        }
-    };
-    let date =  function(){
-        let buf = String(now.getDate());
-        if(buf.length!==2){
-            return "0"+buf;
-        }
-        else{
-            return buf;
-        }
+    let mon = String(now.getMonth()+1);
+    let date = String(now.getDate());
+    if(mon.length <2){
+        mon = "0"+mon;
     }
-    return (year+month()+date());
+    if(date.length <2){
+        date = "0"+date;
+    }
+    let value = year+mon+date;
+    return value;
 }
 
 async function apiCrawl(){
